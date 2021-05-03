@@ -3,6 +3,18 @@ Use multiple tools at once
 
 In this section we will explain how to use DICAST to run a whole pipeline.
 
+Make sure you followed the steps described in the setup section carefully.
+Before getting started make sure to activate the snakemake conda environment:
+
+.. prompt:: bash
+
+  conda activate snakemake
+
+There are two possibilities to run DICAST as pipeline:
+
+  - With graphical user interface (recommended)
+  - With command line
+
 Run pipeline with GUI
 ^^^^^^^^^^^^^^^^^^^^^^
 

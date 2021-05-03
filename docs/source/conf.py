@@ -22,7 +22,7 @@
 
 project = 'DICAST'
 copyright = '2021'
-author = 'Amit Fenn, Olga Tsoy, Alexander Dietrich, Tim Faro, Fanny Rößler'
+author = 'A. Fenn, O. Tsoy, A. Dietrich, T. Faro, F. Rößler'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
@@ -66,13 +66,17 @@ html_theme_options = {
      'logo_only': True
 
 }
-html_logo = 'img/dicast_logo.png'
+html_logo = 'img/dicast_logo.svg'
+html_favicon = 'img/favicon.ico'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 # custom.css is inside one of the html_static_path folders (e.g. _static)
-html_css_files = ["custom.css"]
+html_css_files = ["_templates/custom.css"]
+
+def setup(app):
+    app.add_css_file('_templates/custom.css')
 
 # def setup(app):
 #     app.add_css_file('custom.css')
